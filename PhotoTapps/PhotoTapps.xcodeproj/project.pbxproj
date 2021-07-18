@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		AC15F1BB26A3369C00482EBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F1BA26A3369C00482EBE /* AppDelegate.swift */; };
 		AC15F1BD26A3369C00482EBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F1BC26A3369C00482EBE /* SceneDelegate.swift */; };
-		AC15F1BF26A3369C00482EBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F1BE26A3369C00482EBE /* ViewController.swift */; };
 		AC15F1C226A3369C00482EBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC15F1C026A3369C00482EBE /* Main.storyboard */; };
 		AC15F1C426A3369E00482EBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC15F1C326A3369E00482EBE /* Assets.xcassets */; };
 		AC15F1C726A3369E00482EBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC15F1C526A3369E00482EBE /* LaunchScreen.storyboard */; };
+		AC15F1CF26A33AC300482EBE /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F1CE26A33AC300482EBE /* PhotosCollectionViewController.swift */; };
+		AC84386D26A33D4A00330BC9 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84386C26A33D4A00330BC9 /* PhotoCollectionViewCell.swift */; };
+		AC84386F26A424AE00330BC9 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC84386E26A424AE00330BC9 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC15F1B726A3369C00482EBE /* PhotoTapps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoTapps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC15F1BA26A3369C00482EBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC15F1BC26A3369C00482EBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC15F1BE26A3369C00482EBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AC15F1C126A3369C00482EBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC15F1C326A3369E00482EBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC15F1C626A3369E00482EBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC15F1C826A3369E00482EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC15F1CE26A33AC300482EBE /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		AC84386C26A33D4A00330BC9 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC84386E26A424AE00330BC9 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 		AC15F1B926A3369C00482EBE /* PhotoTapps */ = {
 			isa = PBXGroup;
 			children = (
+				AC84386C26A33D4A00330BC9 /* PhotoCollectionViewCell.swift */,
 				AC15F1BA26A3369C00482EBE /* AppDelegate.swift */,
 				AC15F1BC26A3369C00482EBE /* SceneDelegate.swift */,
-				AC15F1BE26A3369C00482EBE /* ViewController.swift */,
 				AC15F1C026A3369C00482EBE /* Main.storyboard */,
+				AC84386E26A424AE00330BC9 /* PhotoViewController.swift */,
+				AC15F1CE26A33AC300482EBE /* PhotosCollectionViewController.swift */,
 				AC15F1C326A3369E00482EBE /* Assets.xcassets */,
 				AC15F1C526A3369E00482EBE /* LaunchScreen.storyboard */,
 				AC15F1C826A3369E00482EBE /* Info.plist */,
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC15F1BF26A3369C00482EBE /* ViewController.swift in Sources */,
 				AC15F1BB26A3369C00482EBE /* AppDelegate.swift in Sources */,
+				AC84386D26A33D4A00330BC9 /* PhotoCollectionViewCell.swift in Sources */,
 				AC15F1BD26A3369C00482EBE /* SceneDelegate.swift in Sources */,
+				AC15F1CF26A33AC300482EBE /* PhotosCollectionViewController.swift in Sources */,
+				AC84386F26A424AE00330BC9 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = as.PhotoTapps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = as.PhotoTapps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
